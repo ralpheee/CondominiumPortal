@@ -1,0 +1,13 @@
+<h1>Signup Form</h1> <br>
+
+<%= form_for (@user) do |f| %>
+
+	Username: <%= f.text_field :username %> <br><br><br>
+	Apartment Number: <%= f.text_field :apartment_number %> <br><br><br>
+	First Name: <%= f.text_field :first_name %> <br><br><br>
+	Last Name: <%= f.text_field :last_name %> <br><br><br>
+	Password: <%= f.password_field :password %> <br><br><br>
+	Confirm Password: <%= f.password_field :password_confirmation %> <br><br><br>
+	<%= f.submit "Signup" %> <br><br><br>
+
+<% end %>

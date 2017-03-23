@@ -1,0 +1,31 @@
+<!--http://bootsnipp.com/snippets/featured/simple-login-->
+<!--Pulling Awesome Font -->
+
+
+<!--Pulling Awesome Font -->
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="container" >
+    <div class="row">
+        <div class="col-md-offset-5 col-md-3">
+            <div class="form-login">
+            	<h4>Welcome back.</h4>
+					<div class="form-login">
+						<%= image_tag("login_image.png",  class: "loginImg")%>
+						<%= form_tag "/login" do %>
+							<%= text_field_tag :username,"",placeholder: "Username", id: "userName", class: "form-control input-sm chat-input"%><br>
+							<%= password_field_tag :password,"",placeholder: "Password", id: "userPassword", class: "form-control input-sm chat-input"%><br>
+								<div class="wrapper">
+									<span class="group-btn">     
+										<%= submit_tag "Login", class: "btn btn-primary btn-md", id: "loginButton" %>
+									</span>
+							    </div>			
+							<% end %>
+					</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
